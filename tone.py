@@ -4,6 +4,10 @@ image = Image.open('2194.jpg')
 
 user_selection = input('Choose cool or warm. For Cool, type "C". For Warm, type "W":  ')
 
+# we use a lambda function to reduce the relevant values.
+# for a cooler tone image, we reduce the red and green values from our rgb
+# for a warmer tone image, we reduce the green and blue values of our image
+
 
 def cool(img):
     red, green, blue = img.split()
